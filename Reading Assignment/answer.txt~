@@ -1,2 +1,0 @@
-+) When should accessor methods be used?
-Answer: It should be used when you want to access the value of an object's private fields from outside the clasa. They provide controlled access to an object's properties, ensuring that the data remains consistent and encapsulated. They are especially useful when you need to read the data of an object but don't want to allow direct modification.

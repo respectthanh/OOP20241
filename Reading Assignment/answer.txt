@@ -1,7 +1,8 @@
-+) When should accessor methods be used?
-Answer: It should be used when you want to access the value of an object's private fields from outside the clasa. They provide controlled access to an object's properties, ensuring that the data remains consistent and encapsulated. They are especially useful when you need to read the data of an object but don't want to allow direct modification.
+- Question: Is JAVA a Pass by Value or a Pass by Reference programming language? 
+Java is strictly a "pass by value" language.
 
-+) If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this?
-Answer: Yes, Java allows you to have multiple constructors in a class by using constructor overloading method.
+In Java, when you pass a primitive type (like int, float, etc.) to a method, you pass a copy of the value, not the actual variable itself. So, modifications made to the parameter inside the method do not affect the original value outside the method.
 
+Similarly, when you pass an object to a method, you pass a copy of the reference to the object, not the actual object itself. Therefore, modifications made to the object's state inside the method will affect the original object outside the method. However, if you reassign the reference inside the method to point to a new object, it will not affect the original reference outside the method.
 
+This behavior can sometimes be confusing, leading people to mistakenly believe that Java is "pass by reference", but it's essential to understand that it is always "pass by value", whether it's passing primitive types or object references.
