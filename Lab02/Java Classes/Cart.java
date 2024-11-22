@@ -56,4 +56,34 @@ public class Cart {
         }
         return total;
     }
+    
+    public void print(){
+        for (int i = 0; i < qtyOrdered; i++){
+            System.out.println(items[i].toString());
+        }
+    }
+    public void searchCartByTitle(String title){
+        boolean check = false;
+        for (int i = 0; i < qtyOrdered; i++){
+            if (items[i].isMatch(title)){
+                System.out.println(items[i].toString());
+                check = true;
+            }
+        }
+        if (!check){
+            System.out.println("There is no DVD like that");
+        }
+    }
+    public void searchCartByID(int id){
+        boolean check = false;
+        for (int i = 0; i < qtyOrdered; i++){
+            if (items[i].isMatch(id)){
+                System.out.println(items[i].toString());
+                check = true;
+            }
+        }
+        if (!check){
+            System.out.println("There is no DVD like that");
+        }
+    }
 }
