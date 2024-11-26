@@ -1,0 +1,9 @@
+- Question: What class should implement the Comparable interface?
+
+Java is strictly a "pass by value" language.
+
+In Java, when you pass a primitive type (like int, float, etc.) to a method, you pass a copy of the value, not the actual variable itself. So, modifications made to the parameter inside the method do not affect the original value outside the method.
+
+Similarly, when you pass an object to a method, you pass a copy of the reference to the object, not the actual object itself. Therefore, modifications made to the object's state inside the method will affect the original object outside the method. However, if you reassign the reference inside the method to point to a new object, it will not affect the original reference outside the method.
+
+This behavior can sometimes be confusing, leading people to mistakenly believe that Java is "pass by reference", but it's essential to understand that it is always "pass by value", whether it's passing primitive types or object references.
